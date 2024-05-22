@@ -1,0 +1,110 @@
+body {
+    background-color: #d6c7c7;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    color: rgb(133, 57, 57);
+    text-shadow: 1px 1px 2px rgb(165, 77, 92);
+    font-size: 55px;
+ 
+}
+
+.main-board {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#gameboard {
+    display: flex;
+    flex-wrap: wrap;
+    border: 10px solid rgb(99, 46, 46);
+    width: 270px; /* 3 * 90px = 270px */
+    height: 270px;
+}
+ 
+#info {
+    padding: 30px;
+    font-size: 30px;
+    color: rgb(133, 57, 57);
+    text-shadow: 1px 1px 2px rgb(165, 77, 92);
+}
+
+.square {
+    width: 90px;
+    height: 90px;
+    border: 5px solid rgb(133, 57, 57);
+    box-sizing: border-box;
+}
+
+.square-number {
+    background-color: rgb(133, 57, 57);
+}
+
+.circle {
+    position: relative;
+    left:8px;
+    top:10px;
+    width: 70px;
+    height: 65px;
+    border-radius: 50%;
+    border: 5px solid  rgb(92, 42, 12);
+    box-sizing: border-box;
+    
+}
+
+.cross {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    transform: rotate(45deg);
+
+}
+
+.cross::before, .cross::after {
+    content: '';
+    position: absolute;
+    background-color: rgb(143, 9, 60);
+
+}
+
+.cross::before {
+    left:50%;
+    width:30%;
+    height: 100%;
+    margin-left:-15%;
+}
+
+.cross::after {
+    top:50%;
+    height: 30%;
+    width: 100%;
+    margin-top:-15px;
+}
+
+@keyframes confetti-fall {
+    0% { transform: translateY(-100vh) rotateZ(0deg); opacity: 1; }
+    100% { transform: translateY(100vh) rotateZ(720deg); opacity: 0; }
+}
+
+.confetti-piece {
+    position: fixed;
+    top: 0;
+    width: 10px;
+    height: 30px;
+    background-color: red; 
+    animation: confetti-fall 2s linear infinite;
+}
+
+.confetti-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
