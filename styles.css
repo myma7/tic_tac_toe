@@ -1,6 +1,9 @@
+
 body {
     background-color: #d6c7c7;
+    height: 100vh;
 }
+
 h1 {
     display: flex;
     justify-content: center;
@@ -22,7 +25,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     border: 10px solid rgb(99, 46, 46);
-    width: 270px; /* 3 * 90px = 270px */
+    width: 270px; 
     height: 270px;
 }
  
@@ -107,4 +110,20 @@ h1 {
     height: 100%;
     pointer-events: none;
     overflow: hidden;
+}
+
+.btn-element {
+    cursor: pointer;
+    border: none;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 5px;
+    transition: background-color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.btn-element:hover {
+    background-color: rgb(143, 9, 60);
+    text-shadow: 1px 1px 2px rgb(165, 77, 92);
+    transform: scale(1.05);
 }
