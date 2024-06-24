@@ -21,4 +21,4 @@ This project is a simple implementation of the classic Tic Tac Toe game using HT
 
 
 
-Link: https://66793dc3a58cfa8fae0139f2--jocular-alpaca-423cc4.netlify.app/
+You can play the game by following this [link](https://66793ee1123d5b8225791469--thunderous-vacherin-967141.netlify.app/)
