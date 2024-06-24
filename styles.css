@@ -113,6 +113,7 @@ h1 {
 }
 
 .btn-element {
+    background-color: rgb(143, 9, 60);
     cursor: pointer;
     border: none;
     letter-spacing: 1px;
@@ -120,10 +121,11 @@ h1 {
     margin: 20px;
     padding: 5px;
     transition: background-color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .btn-element:hover {
-    background-color: rgb(143, 9, 60);
+    background-color: rgb(133, 57, 57);
     text-shadow: 1px 1px 2px rgb(165, 77, 92);
     transform: scale(1.05);
 }
